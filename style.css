@@ -1,3 +1,78 @@
-body{
-    background-color: lavenderblush;
+/* Reset default styles and use border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Set a pleasant background color and use the Norse Bold font */
+body {
+    background-color: #B9F3E4;
+    font-family: 'norsebold', sans-serif;
+    text-align: center;
+}
+
+/* Styling for the header section containing the form title */
+header {
+    padding: 2rem;
+}
+
+/* Styling for the form container */
+form {
+    display: inline-block;
+    text-align: center; /* Center the form content */
+    background-color: #e8e8e8;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5;
+}
+
+/* Styling for form labels */
+label {
+    display: block; /* Place labels on their own line */
+    font-weight: bold;
+    margin: 0.5rem 0;
+    text-align: left; /* Align labels to the left */
+}
+
+/* Styling for input fields */
+input {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #c5c5c5;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+    margin: 0.5rem 0;
+    outline-color: white;
+    float: right; /* Float inputs to the right */
+}
+
+/* Styling for form submission button */
+button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    font-weight: bold; /* Make submit button text bolder */
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    margin: 6rem auto 1rem; /* Center the button and add top and bottom margin */
+    display: block; /* Ensure button takes full width */
+}
+
+/* Styling for button press effect */
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+/* Styling for the form title */
+h1 {
+    padding: 2rem;
+}
+

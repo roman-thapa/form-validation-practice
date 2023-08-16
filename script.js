@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const zipInput = document.getElementById("zip");
     const passwordInput = document.getElementById("password");
     const confirmPasswordInput = document.getElementById("confirmPassword");
+    const highFiveMessage = document.getElementById("successMessage");
+    const submitAnotherButton = document.getElementById("submitAnother");
     
     emailInput.addEventListener("input", function () {
         if (emailInput.validity.typeMismatch) {
@@ -50,6 +52,19 @@ document.addEventListener("DOMContentLoaded", function () {
         // Check validity before form submission
         if (!form.checkValidity()) {
             event.preventDefault(); // Prevent form submission if validation fails
+        } else {
+            // Hide the form and show the success message
+            form.classList.add("hidden");
+            highFiveMessage.classList.remove("hidden");
+            event.preventDefault();
         }
+    });
+
+    submitAnotherButton.addEventListener("click", function () {
+        // Show the form and hide the success message
+        form.classList.remove("hidden");
+        highFiveMessage.classList.add("hidden");
+        // Clear form fields
+        form.reset();
     });
 });
